@@ -4,33 +4,12 @@
     --bg-color: #ffffff;
     --secondary-bg-color: #f8f8f8;
     --text-color: #3a3a3a;
-    --heading-color: #000000;
+    --heading-color: #555555;
     --secondary-text-color: #555555;
     --border-color: #eaeaea;
     --link-color: #007aff;
     --highlight-bg: #f5f5f5;
     --citation-bg: #f9f9f9;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* Dark Theme Colors */
-        --bg-color: #121212;
-        --secondary-bg-color: #1c1c1c;
-        --text-color: #c9c9c9;
-        --heading-color: #ffffff;
-        --secondary-text-color: #999999;
-        --border-color: #333333;
-        --link-color: #409cff;
-        --highlight-bg: #2a2a2a;
-        --citation-bg: #222222;
-    }
-
-    /* Invert signature and icons in dark mode */
-    .profile-picture img,
-    .sidebar .icon {
-        filter: invert(1);
-    }
 }
 
 body {
@@ -279,16 +258,11 @@ header nav a::after {
     margin-top: 0;
 }
 
-/* --- 7. Component Styles (Publications, Projects) --- */
-.publication-entry h4 a,
+/* --- 7. Component Styles (Projects) --- */
 .project-title {
     color: var(--heading-color);
 }
-.publication-entry h4 a::after {
-    background-color: var(--heading-color);
-}
 
-.publication-meta,
 .project-skills {
     color: var(--secondary-text-color);
 }
